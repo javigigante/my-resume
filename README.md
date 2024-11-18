@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mi Portfolio Personal
 
-## Getting Started
+¡Bienvenido a mi página personal! Este es mi currículum desarrollado con Next.js, Tailwind CSS y otras tecnologías y librerías. 
+Aquí podrás ver mis proyectos, experiencias y logros académicos y profesionales.
 
-First, run the development server:
+---
+
+## 📚 **Tecnologías utilizadas**
+
+- **Next.js**: Framework React para aplicaciones web.
+- **Tailwind CSS**: Framework de utilidades para estilos rápidos y responsivos.
+- **TypeScript**: Lenguaje de programación que añade tipado estático a JavaScript.
+- **ESLint**: Herramienta de análisis estático para mantener la calidad del código.
+- **Express**: Framework web para Node.js, utilizado en la API de backend.
+
+---
+
+## 🚀 **Instalación**
+
+### 1. Clona el repositorio
+Primero, clona el repositorio a tu máquina local:
+
+```bash
+git clone https://github.com/tu-usuario/mi-portfolio.git
+
+2. Instala las dependencias
+Entra en la carpeta del proyecto e instala las dependencias con npm o yarn:
+
+```bash
+cd mi-portfolio
+npm install
+O si usas Yarn:
+
+```bash
+cd mi-portfolio
+yarn install
+3. Inicia el servidor de desarrollo
+Para ejecutar el proyecto localmente en modo desarrollo, usa el siguiente comando:
 
 ```bash
 npm run dev
-# or
+O con Yarn:
+
+```bash
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Esto abrirá la aplicación en http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📖 Descripción del proyecto
+Este es un proyecto personal para mostrar mis habilidades como desarrollador. La estructura es sencilla, con un diseño minimalista y responsivo. Algunas de las características incluyen:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Sección de proyectos con links a las aplicaciones.
+Información sobre mi formación académica y experiencia laboral.
+Diseño interactivo con Tailwind CSS.
+Optimización para dispositivos móviles.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📌 Características
+Responsive: Optimizado para dispositivos móviles y pantallas grandes.
+Interactividad: Incluye efectos interactivos con el uso de React y Tailwind.
+Accesibilidad: Se han tomado medidas para mejorar la accesibilidad del sitio.
+SEO: Configuración básica para SEO con Next.js.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+🛠️ Cómo contribuir
+Si deseas contribuir a este proyecto, puedes seguir los siguientes pasos:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Haz un fork del repositorio.
+Crea tu rama de características (git checkout -b feature/nueva-caracteristica).
+Haz tus cambios y confirma (git commit -am 'Añadir nueva característica').
+Empuja tus cambios (git push origin feature/nueva-caracteristica).
+Crea un pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+📧 Contacto
+Correo electrónico: javigigante.dev@gmail.com
+GitHub: https://github.com/javigigante
+LinkedIn: https://www.linkedin.com/in/javier-diaz-gigante-b9ab28110/
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📝 Licencia
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+🔧 Changelog
+v1.0.0 (2024-11-18)
+Versión inicial del proyecto con diseño base.
+Sección de proyectos y experiencia.
