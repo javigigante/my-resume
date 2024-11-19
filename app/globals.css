@@ -28,6 +28,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.glass {  
+  backdrop-filter: blur(0px) saturate(99%);
+  -webkit-backdrop-filter: blur(0px) saturate(99%);
+  background-color: rgba(255, 255, 255, 0.21);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
