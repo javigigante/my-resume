@@ -9,7 +9,7 @@ Aquí podrás ver mis proyectos, experiencias y logros académicos y profesional
 
 - **Next.js**: Framework React para aplicaciones web.
 - **Tailwind CSS**: Framework de utilidades para estilos rápidos y responsivos.
-- **TypeScript**: Lenguaje de programación que añade tipado estático a JavaScript.
+- **JavaScript**: Como lenguaje de programación principal.
 - **ESLint**: Herramienta de análisis estático para mantener la calidad del código.
 - **Express**: Framework web para Node.js, utilizado en la API de backend.
 
