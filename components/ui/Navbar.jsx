@@ -6,6 +6,7 @@ const Navbar = () => {
 
     const navbarLinks = [
         { name: "Página principal", path: "/" },
+        { name: "Habilidades", path: "/skills" },
         { name: "Currículum", path: "/resume" }, 
         { name: "Contacto", path: "/contact" },
     ];

@@ -3,7 +3,7 @@
 import { animate, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react"
 
-const Counter = ({ from,to,duration=2 }) => {
+const Counter = ({ from = 0, to, duration = 1.5 }) => {
     const ref = useRef(null);
     const inView = useInView(ref, { once: true });
     const controls = useAnimation();
