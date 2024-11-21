@@ -43,7 +43,7 @@ const Skills = () => {
                 </div>
                 <div className="w-full flex justify-center items-center gap-8">
                     <div className="w-1/2 h-auto flex-grow">
-                        <div className="rounded-xl p-6 min-h-72 glass border border-gray-600/[0.5] h-full">
+                        <div className="rounded-xl p-6 min-h-80 glass border border-gray-600/[0.5] h-full">
                             <div className="flex gap-3 items-center">
                                 <div className="w-14 h-14">
                                     <img src="./img/framework.png" alt="skills" className="w-full h-full" />
@@ -51,7 +51,7 @@ const Skills = () => {
                                 <h2 className="text-2xl font-semibold">Lenguajes de Programación y Frameworks que uso</h2>
                             </div>
                             <div className="w-full py-4">
-                                <div className="grid grid-cols-4 gap-9">
+                                <div className="grid grid-cols-6 gap-7">
                                     <div className="flex justify-center items-center">
                                     <img src="./img/java.png" alt="java" className="w-12 h-12 object-contain" />
                                     </div>
@@ -65,8 +65,14 @@ const Skills = () => {
                                         <img src="./img/android.png" alt="android" className="w-12 h-12 object-contain" />
                                     </div>
                                     <div className="flex justify-center items-center">
-                                        <img src="./img/springboot.png" alt="springboot" className="w-12 h-12 object-contain" />
+                                        <img src="./img/csharp.png" alt="csharp" className="w-12 h-12 object-contain" />
                                     </div>
+                                    <div className="flex justify-center items-center">
+                                        <img src="./img/javascript.png" alt="javascript" className="w-12 h-12 object-contain" />
+                                    </div>
+                                    <div className="flex justify-center items-center">
+                                        <img src="./img/springboot.png" alt="springboot" className="w-12 h-12 object-contain" />
+                                    </div>                                    
                                     <div className="flex justify-center items-center">
                                         <img src="./img/nestjs.png" alt="nestjs" className="w-12 h-12 object-contain" />
                                     </div>
@@ -76,12 +82,18 @@ const Skills = () => {
                                     <div className="flex justify-center items-center">
                                         <img src="./img/nextjs.png" alt="nextjs" className="w-12 h-12 object-contain" />
                                     </div>
+                                    <div className="flex justify-center items-center">
+                                        <img src="./img/mysql.png" alt="mysql" className="w-13 h-13 object-contain" />
+                                    </div>
+                                    <div className="flex justify-center items-center">
+                                        <img src="./img/mongodb.png" alt="mongodb" className="w-13 h-13 object-contain" />
+                                    </div>
                                 </div>                                
                             </div>
                         </div>
                     </div>
                     <div className="w-1/2 h-auto flex-grow">
-                        <div className="rounded-xl p-6 min-h-72 glass border border-gray-600/[0.5] h-full">
+                        <div className="rounded-xl p-6 min-h-80 glass border border-gray-600/[0.5] h-full">
                             <div className="flex gap-3 items-center">
                                 <div className="w-14 h-14">
                                     <img src="./img/problems.png" alt="skills" className="w-full h-full" />
