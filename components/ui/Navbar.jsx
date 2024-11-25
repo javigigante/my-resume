@@ -22,7 +22,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <a href="#"><button className="bg-primarycolor px-6 rounded-lg hover:opacity-70 py-2 text-md">¡Disponible para contratar!</button></a>
+          <a href="/contact"><button className="bg-primarycolor px-6 rounded-lg hover:opacity-70 py-2 text-md">¡Disponible para contratar!</button></a>
         </div>
       );
     };

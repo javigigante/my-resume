@@ -1,3 +1,5 @@
+import { PiStudentFill } from "react-icons/pi";
+import { MdOutlineWork } from "react-icons/md";
 
 const experiencedata = [
     {
@@ -38,12 +40,13 @@ const educationdata = [
 const Resume = () => {
     return (
         <div className="w-full min-h-screen flex justify-center items-center">
-            <div className="flex flex-col md:flex-row gap-8 w-full max-w-screen-xl h-[75vh] pt-20">
-                {/* Columna Experiencia Laboral */}
+            <div className="flex flex-col md:flex-row gap-8 w-full max-w-screen-xl h-[75vh] pt-20">                
                 <div className="flex-1 flex justify-center items-center">
                     <div className="w-full h-full rounded-xl p-6 primary-glass2 border hover:bg-blue-950 border-gray-600/[0.5] flex flex-col justify-between">
-                        <div className="w-full">
-                            <h3 className="text-3xl font-extrabold text-white">Experiencia Laboral</h3>
+                        <div className="w-full"> 
+                                <div className="flex items-center gap-5"> 
+                                    <MdOutlineWork className="h-10 w-10"/><h3 className="text-3xl font-extrabold text-white">Experiencia Laboral</h3>
+                                </div>                                                       
                         </div>
                         <div className="py-5 overflow-y-auto">
                             <ul className="relative pl-20 before:content-[''] before:w-0.5 before:h-full before:bg-gray-400 before:absolute before:left-8 before:top-9">
@@ -70,13 +73,13 @@ const Resume = () => {
                             </ul>
                         </div>
                     </div>
-                </div>
-
-                {/* Columna Formación Académica */}
+                </div>                
                 <div className="flex-1 flex justify-center items-center">
                     <div className="w-full h-full rounded-xl p-6 primary-glass2 border hover:bg-blue-950 border-gray-600/[0.5] flex flex-col justify-between">
                         <div className="w-full">
-                            <h3 className="text-3xl font-extrabold text-white">Formación Académica</h3>
+                            <div className="flex items-center gap-5"> 
+                                <PiStudentFill className="h-10 w-10"/><h3 className="text-3xl font-extrabold text-white">Formación Académica</h3>
+                            </div>
                         </div>
                         <div className="py-5 overflow-y-auto">
                             <ul className="relative pl-20 before:content-[''] before:w-0.5 before:h-full before:bg-gray-400 before:absolute before:left-8 before:top-9">

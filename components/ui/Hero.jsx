@@ -11,9 +11,7 @@ const Hero = () => {
         <div className="flex-1">
           <div className="text_container">
             <h5 className="text-gray-600">¡Muy buenas!</h5>
-            <h2 className="text-6xl font-bold">
-              Soy <span className="text-primarycolor">JaviGigante</span>,<br /> Desarrollador Backend
-            </h2>
+            <h2 className="text-4xl md:text-7xl font-bold">Soy <span className="text-primarycolor">JaviGigante</span>,<br /> Desarrollador Backend</h2>
             <p className="py-2 text-md text-gray-400">
               Sé bienvenido a mi página / currículum personal. <br /> Aquí encontrarás todo lo que soy, he trabajado, estudiado y demás misceláneas.
               No te cortes y contáctame para lo que necesites y con las dudas que te surjan.
@@ -34,12 +32,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="w-11/12 flex gap-4 py-8 justify-center items-stretch">
-
-        {/* Burbuja izquierda */}
+      <div className="w-11/12 flex gap-4 py-8 justify-center items-stretch">        
         <div className="flex-1 flex min-h-52 items-center bg-slate-900 py-7 rounded-3xl border border-gray-600/[0.5] shadow-2xl shadow-blue-500/20 gap-6 h-full">
-          <div className="flex w-1/2 flex-col items-center gap-4 pr-4 border-r-2 border-gray-400">
-            <div className="font-bold text-5xl text-primarycolor flex items-center">
+          <div className="flex w-1/2 flex-col items-center px-2 gap-4 pr-4 border-r-2 border-gray-400">
+            <div className="font-bold md:text-5xl text-3xl text-primarycolor flex items-center">
               <span>+</span>
               <Counter from={0} to={7} />
             </div>
@@ -51,8 +47,8 @@ const Hero = () => {
               </h4>
             </div>
           </div>
-          <div className="flex w-1/2 flex-col items-center gap-4 pl-4">
-            <div className="font-bold text-5xl text-primarycolor">
+          <div className="flex w-1/2 flex-col items-center px-2 gap-4 pl-4">
+            <div className="font-bold md:text-5xl text-3xl text-primarycolor">
               <IoInfinite />
             </div>
             <div className="text-center">
@@ -63,9 +59,7 @@ const Hero = () => {
               </h4>
             </div>
           </div>
-        </div>
-
-        {/* Burbuja derecha */}
+        </div>        
         <div className="flex-1 flex min-h-52 items-center bg-slate-900 py-8 rounded-3xl border border-gray-600/[0.5] shadow-2xl shadow-blue-500/20 h-full">
           <ul className="flex w-full justify-evenly items-center gap-4">
             {[
