@@ -76,10 +76,33 @@ body {
 }
 
 .primary-glass2 {
-background-color:hsla(80,5%,22%,1);
-background-image:
-  radial-gradient(at 87% 82%, hsla(24,100%,50%,1) 0px, transparent 50%),
-  radial-gradient(at 15% 87%, hsla(24,100%,50%,1) 0px, transparent 50%);
+  background-color:hsla(80,5%,22%,1);
+  background-image:
+    radial-gradient(at 87% 82%, hsla(24,100%,50%,1) 0px, transparent 50%),
+    radial-gradient(at 15% 87%, hsla(24,100%,50%,1) 0px, transparent 50%);
+}
+
+.resume-glass {
+  background-color:hsla(32,100%,50%,0.41);
+  background-image:
+    radial-gradient(at 41% 87%, hsla(14,80%,23%,1) 0px, transparent 50%),
+    radial-gradient(at 8% 14%, hsla(220,0%,0%,1) 0px, transparent 50%);
+}
+
+.resume-glass-left {
+  background-color:hsla(32,0%,0%,1);
+  background-image:
+    radial-gradient(at 0% 100%, hsla(15,75%,50%,1) 0px, transparent 50%),
+    radial-gradient(at 6% 26%, hsla(14,80%,23%,1) 0px, transparent 50%),
+    radial-gradient(at 83% 30%, hsla(220,0%,0%,1) 0px, transparent 50%);
+}
+
+.resume-glass-right {
+  background-color:hsla(240,2%,13%,1);
+  background-image:
+    radial-gradient(at 100% 100%, hsla(15,75%,50%,1) 0px, transparent 50%),
+    radial-gradient(at 96% 16%, hsla(14,80%,23%,1) 0px, transparent 50%),
+    radial-gradient(at 10% 19%, hsla(220,0%,0%,1) 0px, transparent 50%);
 }
 
 .primary-glass::after {

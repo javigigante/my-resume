@@ -42,7 +42,7 @@ const Resume = () => {
         <div className="w-full min-h-screen flex justify-center items-center">
             <div className="flex flex-col md:flex-row gap-8 w-full max-w-screen-xl h-[75vh] pt-20">                
                 <div className="flex-1 flex justify-center items-center">
-                    <div className="w-full h-full rounded-xl p-6 primary-glass2 border hover:bg-blue-950 border-gray-600/[0.5] flex flex-col justify-between">
+                    <div className="w-full h-full rounded-xl p-6 bg-slate-800 border-gray-600/[0.5] flex flex-col justify-between">
                         <div className="w-full"> 
                                 <div className="flex items-center gap-5"> 
                                     <MdOutlineWork className="h-10 w-10"/><h3 className="text-3xl font-extrabold text-white">Experiencia Laboral</h3>
@@ -75,7 +75,7 @@ const Resume = () => {
                     </div>
                 </div>                
                 <div className="flex-1 flex justify-center items-center">
-                    <div className="w-full h-full rounded-xl p-6 primary-glass2 border hover:bg-blue-950 border-gray-600/[0.5] flex flex-col justify-between">
+                    <div className="w-full h-full rounded-xl p-6 bg-slate-800 border-gray-600/[0.5] flex flex-col justify-between">
                         <div className="w-full">
                             <div className="flex items-center gap-5"> 
                                 <PiStudentFill className="h-10 w-10"/><h3 className="text-3xl font-extrabold text-white">Formación Académica</h3>
@@ -96,10 +96,10 @@ const Resume = () => {
                                             {education.label}
                                         </h4>
                                         <p className="text-md py-2 font-bold text-gray-300">
-                                            {education.institution}
+                                            {education.year}
                                         </p>
                                         <p className="text-md py-2 font-bold text-gray-300 italic">
-                                            {education.year}
+                                            {education.institution}
                                         </p>
                                     </li>
                                 ))}
