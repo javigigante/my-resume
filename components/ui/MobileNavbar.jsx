@@ -22,7 +22,7 @@ const MobileNavbar = () => {
 
     return (
         <div className="flex justify-end">
-            <button className="text-2xl bg-primarycolor rounded p-2" onClick={ () => setMenuOpen(true) }>
+            <button className="text-xl bg-primarycolor rounded p-2" onClick={ () => setMenuOpen(true) }>
                 <FaBars />
             </button>
             { menuOpen &&
@@ -30,9 +30,10 @@ const MobileNavbar = () => {
                 className={`w-full min-h-screen flex justify-center items-center fixed top-0 left-0 bg-primarycolor`}>
                     <button className="fixed top-5 right-5 bg-black rounded-3xl text-4xl p-1" onClick={ () => setMenuOpen(false) }><IoCloseSharp/></button>
                     <ul className="w-full flex justify-center flex-col gap-4 items-center h-full">
-                        {mobileNavbarLinks.map((link, index) => (
-                            <li key={index} className={`text-xl font-bold ${pathname === link.path ? "text-black" : "text-white"} hover:text-secondarycolor transition-all duration-150`}>
-                                <Link href={link.path}>{link.name}</Link>
+                        { mobileNavbarLinks.map(( link, index ) => (
+                            <li key={ index } className={`text-xl font-bold ${pathname === link.path ? "text-black" : "text-white"}
+                            hover:text-secondarycolor transition-all duration-150`}>
+                                <Link href={ link.path } onClick={ () => setMenuOpen(false) }> { link.name } </Link>
                             </li>
                         ))}
                     </ul>

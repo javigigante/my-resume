@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import MobileNavbar from "./MobileNavbar";
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [ isScrolled, setIsScrolled ] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,7 +13,7 @@ const Header = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll); // Limpia el listener
+    return () => window.removeEventListener("scroll", handleScroll); 
   }, []);
 
   return (
@@ -24,7 +24,7 @@ const Header = () => {
     >
       <div className="w-11/12 flex justify-center px-4 py-6 items-center">
         <div className="flex-1">
-          <h4 className="md:text-xl text-lg">
+          <h4 className="md:text-xl text-sm">
             Javier <span className="text-primarycolor">Díaz Gigante</span>
           </h4>
         </div>

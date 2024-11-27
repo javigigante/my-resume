@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { SiImessage } from "react-icons/si";
+
 const Navbar = () => {
 
     const navbarLinks = [
@@ -21,8 +23,8 @@ const Navbar = () => {
                 <Link href={link.path}>{link.name}</Link>
               </li>
             ))}
-          </ul>
-          <a href="/contact"><button className="bg-primarycolor px-6 rounded-lg hover:opacity-70 py-2 text-md">¡Disponible para contratar!</button></a>
+          </ul>          
+          <a href="/contact"><button className="bg-primarycolor md:px-2 px-6 rounded-lg hover:opacity-70 py-2 text-md md:py-1 md:hidden">¡Disponible para contratar!</button></a>
         </div>
       );
     };

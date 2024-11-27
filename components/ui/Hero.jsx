@@ -45,7 +45,7 @@ const Hero = () => {
               </h4>
             </div>
           </div>
-          <div className="flex w-1/2 flex-col items-center px-2 md:gap-4 gap-2 pl-4">
+          <div className="flex w-1/2 flex-col items-center px-2 md:gap-4 gap-2">
             <div className="font-bold md:text-5xl text-3xl text-primarycolor">
               <IoInfinite />
             </div>
