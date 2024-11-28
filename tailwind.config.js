@@ -15,9 +15,15 @@ module.exports = {
         thirdcolor: "#E5A159",
         bgcolor: "#1a1a36"
       },
-      backgrounImage: {
+      backgroundImage: {
         grid: "url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22 fill=%22none%22 stroke=%22white%22 stroke-width=%221%22%3E%3Crect width=%2220%22 height=%2220%22/%3E%3C/svg%3E')",
       },
+    },
+    screens: {
+      sm: '640px', 
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
     },
   },
   plugins: [ ],
