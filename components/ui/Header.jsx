@@ -31,7 +31,7 @@ const Header = () => {
     >
       <div className="w-11/12 flex justify-center px-4 py-6 items-center z-40">
         <div className="flex-1">
-          <h4 className="md:text-xl text-sm">
+          <h4 className="lg:text-xl md:text-lg text-sm">
             Javier <span className="text-primarycolor">Díaz Gigante</span>
           </h4>
         </div>
