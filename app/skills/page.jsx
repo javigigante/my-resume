@@ -3,8 +3,7 @@ const Skills = () => {
     return (
         <div className="w-full z-20 min-h-screen flex justify-center items-center flex-col">
           <div className="w-11/12 h-full pt-8 pb-20 flex flex-col items-center">
-            <div className="w-full flex lg:flex-row flex-col lg:justify-center items-center lg:gap-8 md:gap-4 gap-2 lg:mb-8 mt-14 lg:mt-0">
-              {/* Primera burbuja */}
+            <div className="w-full flex lg:flex-row flex-col lg:justify-center items-center lg:gap-8 md:gap-4 gap-2 lg:mb-8 mt-14 lg:mt-0">              
               <div className="lg:w-1/2 w-full h-auto">
                 <div className="rounded-xl p-6 overflow-hidden lg:min-h-72 md:min-h-52 glass border hover:bg-slate-700 border-gray-600/[0.5] h-full flex flex-col">
                   <div className="flex gap-3 md:gap-2 items-center lg:mb-4 md:mb-1 sm:mb-0">
@@ -21,8 +20,7 @@ const Skills = () => {
                     </p>
                   </div>
                 </div>
-              </div>
-              {/* Segunda burbuja */}
+              </div>              
               <div className="lg:w-1/2 w-full h-auto">
                 <div className="rounded-xl p-6 lg:min-h-72 md:min-h-64 glass border hover:bg-slate-700 border-gray-600/[0.5] h-full flex flex-col">
                   <div className="flex gap-3 md:gap-2 items-center lg:mb-4 md:mb-1 sm:mb-0">
@@ -41,10 +39,8 @@ const Skills = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            {/* Segunda fila */}
-            <div className="w-full flex lg:flex-row flex-col lg:justify-center items-center lg:gap-8 md:gap-4 gap-2 lg:mb-8 mt-2 md:mt-4 lg:mt-0">
-              {/* Tercera burbuja */}
+            </div>            
+            <div className="w-full flex lg:flex-row flex-col lg:justify-center items-center lg:gap-8 md:gap-4 gap-2 lg:mb-8 mt-2 md:mt-4 lg:mt-0">              
               <div className="lg:w-1/2 w-full h-auto">
                 <div className="rounded-xl p-6 glass lg:min-h-80 border hover:bg-slate-700 border-gray-600/[0.5] h-full flex flex-col">
                   <div className="flex gap-3 items-center mb-4">
@@ -54,8 +50,7 @@ const Skills = () => {
                     <h2 className="lg:text-2xl sm:text-xl font-semibold">Lenguajes de Programación y Frameworks que uso</h2>
                   </div>
                   <div className="flex-grow flex items-center justify-center">
-                    <div className="grid md:grid-cols-6 grid-cols-3 gap-16 md:px-10 sm:px-5">
-                      {/* Logos */}
+                    <div className="grid md:grid-cols-6 grid-cols-3 gap-16 md:px-10 sm:px-5">                      
                       {[
                         { src: "./img/java.png", alt: "java" },
                         { src: "./img/typescript.png", alt: "typescript" },
@@ -77,8 +72,7 @@ const Skills = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              {/* Cuarta burbuja */}
+              </div>              
               <div className="lg:w-1/2 w-full h-auto">
                 <div className="rounded-xl p-6 lg:min-h-80 glass border hover:bg-slate-700 border-gray-600/[0.5] h-full flex flex-col">
                   <div className="flex gap-3 md:gap-2 items-center lg:mb-4 md:mb-1 sm:mb-0">

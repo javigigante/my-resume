@@ -40,8 +40,7 @@ const educationdata = [
 const Resume = () => {
     return (
       <div className="w-full z-20 min-h-screen flex justify-center items-center">
-        <div className="flex flex-col lg:landscape:flex-row md:landscape:flex-col sm:landscape:flex-col gap-5 sm:gap-4 px-5 w-full lg:max-w-screen-xl h-auto pt-20 pb-5">
-          {/* EXPERIENCIA LABORAL */}
+        <div className="flex flex-col lg:landscape:flex-row md:landscape:flex-col sm:landscape:flex-col gap-5 sm:gap-4 px-5 w-full lg:max-w-screen-xl h-auto pt-20 pb-5">          
           <div className="flex-1 flex justify-center items-center">
             <div className="sm:landscape:w-[450px] md:landscape:w-[550px] lg:landscape:w-full w-full h-full rounded-xl md:p-6 p-3 bg-slate-800 border-gray-600/[0.5] flex flex-col justify-between">
               <div className="w-full">
@@ -77,9 +76,7 @@ const Resume = () => {
                 </ul>
               </div>
             </div>
-          </div>
-  
-          {/* FORMACIÓN ACADÉMICA */}
+          </div>          
           <div className="flex-1 flex justify-center items-center">
             <div className="sm:landscape:w-[450px] md:landscape:w-[550px] lg:landscape:w-full w-full h-full rounded-xl md:p-6 p-3 py-5 bg-slate-800 border-gray-600/[0.5] flex flex-col justify-between">
               <div className="w-full">
