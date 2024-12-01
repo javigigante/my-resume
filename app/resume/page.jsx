@@ -53,9 +53,9 @@ const Resume = () => {
               </div>
               <div className="md:py-8 py-5">
                 <ul className="relative md:pl-20 pl-10 before:content-[''] before:w-0.5 before:h-5/6 before:bg-gray-400 before:absolute lg:before:left-8 md:before:left-5 before:left-3 lg:before:top-8 md:before:top-5 before:top-4 sm:landscape:before:top-9">
-                  {experiencedata.map((experience, index) => (
+                  {experiencedata.map(( experience, index ) => (
                     <li
-                      key={index}
+                      key={ index }
                       className={`md:py-5 py-2 sm:landscape:py-0 md:landscape:py-5 relative ${
                         index === 0
                           ? "after:content-[''] after:w-5 after:h-5 after:bg-primarycolor after:absolute lg:after:left-[-56px] lg:landscape:after:left-[-56px] md:before:left-[-56px] after:left-[-37px] sm:landscape:after:left-[-69px] after:rounded-full md:after:top-8 after:top-4"
@@ -63,13 +63,13 @@ const Resume = () => {
                       } before:content-[''] before:w-5 before:h-5 before:bg-gray-400 before:absolute lg:before:left-[-56px] lg:landscape:before:left-[-56px] md:before:left-[-56px] before:left-[-37px] sm:landscape:before:left-[-69px] before:rounded-full md:before:top-8 before:top-4`}
                     >
                       <h4 className="md:text-lg text-md md:py-2 py-1 font-bold text-white landscape:-ml-5">
-                        {experience.label}
+                        { experience.label }
                       </h4>
                       <p className="md:text-md text-sm md:py-2 py-1 font-bold text-gray-300 lg:pl-2 md:pl-5 pl-4">
-                        {experience.year}
+                        { experience.year }
                       </p>
                       <p className="md:text-md text-sm md:py-2 py-1 font-bold text-gray-300 italic lg:pl-2 md:pl-5 pl-4">
-                        {experience.company}
+                        { experience.company }
                       </p>
                     </li>
                   ))}
@@ -89,9 +89,9 @@ const Resume = () => {
               </div>
               <div className="md:py-8 py-5">
                 <ul className="relative md:pl-20 pl-10 before:content-[''] before:w-0.5 before:h-5/6 before:bg-gray-400 before:absolute lg:before:left-8 md:before:left-5 before:left-3 lg:before:top-8 md:before:top-5 before:top-4 sm:landscape:before:top-9">
-                  {educationdata.map((education, index) => (
+                  {educationdata.map(( education, index ) => (
                     <li
-                      key={index}
+                      key={ index }
                       className={`md:py-4 py-2 sm:landscape:py-0 md:landscape:py-5 relative ${
                         index === 0
                         ? "after:content-[''] after:w-5 after:h-5 after:bg-primarycolor after:absolute lg:after:left-[-56px] lg:landscape:after:left-[-56px] md:before:left-[-56px] after:left-[-37px] sm:landscape:after:left-[-69px] after:rounded-full md:after:top-8 after:top-4"
@@ -99,13 +99,13 @@ const Resume = () => {
                     } before:content-[''] before:w-5 before:h-5 before:bg-gray-400 before:absolute lg:before:left-[-56px] lg:landscape:before:left-[-56px] md:before:left-[-56px] before:left-[-37px] sm:landscape:before:left-[-69px] before:rounded-full md:before:top-8 before:top-4`}
                   >
                       <h4 className="md:text-lg text-md md:py-2 py-1 font-bold text-white landscape:-ml-5">
-                        {education.label}
+                        { education.label }
                       </h4>
                       <p className="md:text-md text-sm md:py-2 py-1 font-bold text-gray-300 lg:pl-7 md:pl-5 pl-4">
-                        {education.year}
+                        { education.year }
                       </p>
                       <p className="md:text-md text-sm md:py-2 py-1 font-bold text-gray-300 italic lg:pl-7 md:pl-5 pl-4">
-                        {education.institution}
+                        { education.institution }
                       </p>
                     </li>
                   ))}

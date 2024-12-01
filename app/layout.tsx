@@ -14,17 +14,13 @@ export const metadata: Metadata = {
   description: "Un CV online de JaviGigante",  
 };
 
-const pageIcon = process.env.NEXT_PUBLIC_FAVICON
-
-
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${PlusJakartaSans.className} antialiased text-white`}>
 
         <Navbar/>
-        {children}
+        { children }
       </body>
     </html>
   );

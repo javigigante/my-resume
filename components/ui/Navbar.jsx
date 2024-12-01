@@ -2,8 +2,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { SiImessage } from "react-icons/si";
-
 const Navbar = () => {
 
     const navbarLinks = [
@@ -18,9 +16,11 @@ const Navbar = () => {
     return (
         <div className="w-full h-full flex items-center justify-center">
           <ul className="w-full flex justify-center gap-4 items-center h-full">
-            {navbarLinks.map((link, index) => (
-              <li key={index} className={`lg:text-md sm:text-sm lg:font-semibold sm:landscape:font-normal md:landscape:font-normal lg:landscape:font-semibold ${pathname === link.path ? "text-primarycolor" : "text-white"} hover:text-primarycolor transition-all duration-150`}>
-                <Link href={link.path}>{link.name}</Link>
+            {navbarLinks.map(( link, index ) => (
+              <li key={ index } className={`lg:text-md sm:text-sm lg:font-semibold sm:landscape:font-normal md:landscape:font-normal lg:landscape:font-semibold
+                ${ pathname === link.path ? "text-primarycolor" : "text-white" }
+              hover:text-primarycolor transition-all duration-150`}>
+                <Link href={ link.path }>{ link.name }</Link>
               </li>
             ))}
           </ul>          

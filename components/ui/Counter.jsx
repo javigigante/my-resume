@@ -10,12 +10,12 @@ const Counter = ({ from = 0, to, duration = 1.5 }) => {
 
     useEffect(() => {
         const element = ref.current;
-        if(!element) return;
-        if(!inView) return;
+        if( !element ) return;
+        if( !inView ) return;
 
         element.textContent = String(from);
 
-        if (window.matchMedia('(prefers-reduced-motion)').matches){
+        if ( window.matchMedia('(prefers-reduced-motion)' ).matches ){
             element.textContent = String(to);
             return;
         }

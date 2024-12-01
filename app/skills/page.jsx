@@ -64,9 +64,9 @@ const Skills = () => {
                         { src: "./img/nextjs.png", alt: "nextjs" },
                         { src: "./img/mysql.png", alt: "mysql" },
                         { src: "./img/mongodb.png", alt: "mongodb" },
-                      ].map((logo, index) => (
-                        <div key={index} className="flex justify-center items-center">
-                          <img src={logo.src} alt={logo.alt} className="w-12 h-12 object-contain" />
+                      ].map(( logo, index ) => (
+                        <div key={ index } className="flex justify-center items-center">
+                          <img src={ logo.src } alt={ logo.alt } className="w-12 h-12 object-contain" />
                         </div>
                       ))}
                     </div>

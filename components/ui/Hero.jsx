@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="flex w-1/2 flex-col items-center px-2 md:gap-4 gap-2 pr-4 border-r-2 border-gray-400">
             <div className="font-bold md:text-5xl text-3xl text-primarycolor flex items-center">
               <span>+</span>
-              <Counter from={0} to={7} />
+              <Counter from={ 0 } to={ 7 } />
             </div>
             <div className="text-center">
               <h4 className="md:text-xl text-sm sm:landscape:text-sm md:landscape:text-md lg:landscape:text-xl">
@@ -93,7 +93,7 @@ const Hero = () => {
                     </button>
                   </a>
                   <div className="flex flex-col items-center mt-1">
-                    <span className="text-sm text-gray-300">{label}</span>
+                    <span className="text-sm text-gray-300">{ label }</span>
                     <span className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 mt-1 transition-opacity duration-300 max-w-[150px] text-center">
                       <span className="hidden sm:inline sm:landscape:inline">
                         { description }
@@ -104,9 +104,7 @@ const Hero = () => {
                   </div>
                 </li>
               );
-
             })}
-
           </ul>
         </div>
       </div>
