@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Plus_Jakarta_Sans } from 'next/font/google'
-import Navbar from "@/components/ui/Header"
-import { title } from "process";
+import Navbar from "@/components/layout/Header"
 
 const PlusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -10,7 +9,7 @@ const PlusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: `JaviGigante | ${title}`,
+  title: 'JaviGigante',
   description: "Un CV online de JaviGigante",  
 };
 

@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/page.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/page.tsx", "pages/components/ui/Hero.jsx", "pages/components/ui/Counter.jsx", "pages/components/layout/Navbar.jsx", "pages/components/layout/MobileNavbar.jsx", "pages/components/layout/Header.jsx", "pages/app/skills/page.jsxactFapp/resume/page.jsxls/papp/contact/page.jsxe/page.jsx", "pages/contact/page.jsx"],
   "exclude": ["node_modules"]
 }

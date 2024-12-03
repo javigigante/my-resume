@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { FaFileDownload } from "react-icons/fa";
 import { IoInfinite } from "react-icons/io5";
 import { FaDribbble, FaLinkedin } from "react-icons/fa";
@@ -6,8 +8,8 @@ import Counter from "./Counter"
 
 const Hero = () => {
 
-  const profileIMG = process.env.NEXT_PUBLIC_PROFILE_IMG;
-  const profileCV = process.env.NEXT_PUBLIC_PROFILE_RESUME;
+  const profileIMG = "/img/javi-cv-bn.jpg";
+  const profileCV = "/docs/CVJavier.pdf";
 
   return (
     <div className="w-full z-20 h-full flex justify-center items-center flex-col">

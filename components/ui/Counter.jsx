@@ -1,12 +1,14 @@
 "use client"
 
-import { animate, useAnimation, useInView } from "framer-motion";
+import React from 'react';
+
+import PropTypes from 'prop-types';
+import { animate, useInView } from "framer-motion";
 import { useEffect, useRef } from "react"
 
 const Counter = ({ from = 0, to, duration = 1.5 }) => {
     const ref = useRef(null);
-    const inView = useInView(ref, { once: true });
-    const controls = useAnimation();
+    const inView = useInView(ref, { once: true });    
 
     useEffect(() => {
         const element = ref.current;
@@ -36,5 +38,11 @@ const Counter = ({ from = 0, to, duration = 1.5 }) => {
     return <div ref={ref} />
     
 }
+
+Counter.propTypes = {
+    from: PropTypes.number.isRequired,
+    to: PropTypes.number.isRequired,
+    duration: PropTypes.number.isRequired,
+};
 
 export default Counter
