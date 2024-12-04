@@ -1,6 +1,6 @@
 # Mi Portfolio Personal
 
-¡Bienvenido a mi página personal! Este es mi currículum desarrollado con Next.js, Tailwind CSS y otras tecnologías y librerías. 
+¡Bienvenido a mi página personal! Este es mi currículum desarrollado con Next.js, Tailwind CSS y otras tecnologías y librerías. Cuenta con una pequeña parte de Backend (LO QUE MÁS ME GUSTA!!) para controlar el envío de emails desde el formulario. ¡Pruébalo! Te llegará una copia de lo que me hayas mandado. 
 Aquí podrás ver mis proyectos, experiencias y logros académicos y profesionales.
 
 ---
@@ -12,7 +12,7 @@ Aquí podrás ver mis proyectos, experiencias y logros académicos y profesional
 - **JavaScript**: Como lenguaje de programación principal.
 - **ESLint**: Herramienta de análisis estático para mantener la calidad del código.
 - **Express**: Framework web para Node.js, utilizado en la API de backend.
-- **EmailJS**: Herramienta para envío de emails.
+- **Nodemailer**: Herramienta para envío de emails.
 
 ---
 
