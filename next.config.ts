@@ -1,11 +1,19 @@
 import { NextConfig } from 'next';
-import process from 'process'; 
+import webpack from 'webpack';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   env: {
     NEXT_PUBLIC_EMAILJS_USER: process.env.NEXT_PUBLIC_EMAIL_USER,
     NEXT_PUBLIC_EMAILJS_EMAIL_PASS: process.env.NEXT_PUBLIC_EMAIL_PASS,
+  },
+  webpack(config) {
+    config.plugins.push(
+      new webpack.ProvidePlugin({
+        process: 'process/browser', // Polyfill para 'process'
+      })
+    );
+    return config;
   },
   async headers() {
     return [
