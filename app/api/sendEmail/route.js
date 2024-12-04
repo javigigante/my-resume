@@ -49,7 +49,7 @@ export async function POST(req) {
   } catch (error) {
     console.error('Error sending email:', error);
     return new Response(
-      JSON.stringify({ message: 'Ha ocurrido un error al enviar el email.', error: error.message }),
+      JSON.stringify({ message: 'Ha ocurrido un error.', error: error.message }),
       { 
         status: 500, 
       }
