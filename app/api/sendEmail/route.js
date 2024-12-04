@@ -11,6 +11,9 @@ export async function POST(req) {
         status: 400, 
       });
     };
+
+    console.log('Usuario: ', process.env.NEXT_PUBLIC_EMAIL_USER );
+    console.log('Pass: ', process.env.NEXT_PUBLIC_EMAIL_PASS );
     
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com', 
@@ -46,6 +49,7 @@ export async function POST(req) {
     {
       status: 200,
     });
+
   } catch (error) {
     console.error('Error sending email:', error);
     return new Response(
