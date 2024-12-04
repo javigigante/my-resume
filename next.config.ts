@@ -1,13 +1,11 @@
 import { NextConfig } from "next";
 import { webpack } from "next/dist/compiled/webpack/webpack";
 
-
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  env: {    
-    NEXT_PUBLIC_EMAILJS_SERVICE_ID: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-    NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-    NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+  env: {
+    NEXT_PUBLIC_EMAILJS_USER: process.env.NEXT_PUBLIC_EMAIL_USER,
+    NEXT_PUBLIC_EMAILJS_EMAIL_PASS: process.env.NEXT_PUBLIC_EMAIL_PASS,
   },
   webpack(config) {
     config.plugins.push(
@@ -20,12 +18,12 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     return [
-      {        
+      {
         source: "/api/sendEmail",
         headers: [
           {
             key: "Access-Control-Allow-Origin",
-            value: "*", 
+            value: "*",
           },
           {
             key: "Access-Control-Allow-Methods",

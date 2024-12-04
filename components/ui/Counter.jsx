@@ -1,10 +1,8 @@
 "use client"
 
-import React from 'react';
-
 import PropTypes from 'prop-types';
 import { animate, useInView } from "framer-motion";
-import { useEffect, useRef } from "react"
+import React, { useEffect, useRef } from "react"
 
 const Counter = ({ from = 0, to, duration = 1.5 }) => {
     const ref = useRef(null);

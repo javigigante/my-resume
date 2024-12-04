@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Skills = () => {
     return (
         <div className="w-full z-20 min-h-screen flex justify-center items-center flex-col">

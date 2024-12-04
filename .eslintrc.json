@@ -1,30 +1,35 @@
 {
   "extends": [
-    "next/core-web-vitals",         // Reglas específicas de Next.js
-    "eslint:recommended",            // Reglas básicas de ESLint
-    "plugin:react/recommended",      // Reglas recomendadas para React
-    "plugin:jsx-a11y/recommended"   // Reglas de accesibilidad para JSX
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
   ],
-  "parser": "babel-eslint",          // Usar el parser de Babel (para JavaScript)
+  "parser": "@babel/eslint-parser",
   "plugins": ["react", "jsx-a11y"],
   "settings": {
     "react": {
       "version": "detect"
-      },
+    }
+  },
   "env": {
-    "node": true,  // Esto permite el uso de Node.js, incluyendo 'process'
-    "browser": true // Esto permite el uso del navegador (si es necesario)
-  },  
+    "node": true,
+    "browser": true,
+    "es2021": true
+  },
+  "globals": {
+    "process": "readonly"
+  },
   "rules": {
-    "react/react-in-jsx-scope": "off",  // Desactivar la regla react/react-in-jsx-scope ya que no es necesaria con Next.js
-    "no-console": "warn",               // Advertir sobre el uso de console.log (puedes cambiarlo a 'off' si prefieres desactivarlo)
-    "no-unused-vars": "warn",           // Advertir sobre variables no utilizadas
-    "no-undef": ["error", { "typeof": true }],                // Error si se usa una variable no definida
-    "react/prop-types": "off",          // Desactivar la regla de validación de tipos de props en React, ya que JavaScript no tiene tipado estático
-    "jsx-a11y/anchor-is-valid": "off",  // Desactivar la regla para anclas válidas, ya que Next.js usa el componente 'Link' para enlaces
-    "react/jsx-key": "warn",           // Advertir si un componente de lista no tiene una propiedad 'key'
-    "import/no-anonymous-default-export": "warn"  // Advertir sobre exportaciones por defecto anónimas (útil para evitar exportar funciones anónimas)
+    "react/react-in-jsx-scope": "off",
+    "no-console": "warn",
+    "no-unused-vars": "warn",
+    "no-undef": ["error", { "typeof": true }],
+    "react/prop-types": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/jsx-key": "warn",
+    "import/no-anonymous-default-export": "warn"
   }
 }
-}
+
 
