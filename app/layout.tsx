@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import "./globals.css";
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import Navbar from "@/components/layout/Header"
+import { ReactNode } from "react";
 
 const PlusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -13,7 +14,11 @@ export const metadata: Metadata = {
   description: "Un CV online de JaviGigante",  
 };
 
-export default function RootLayout({ children }) {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children } : RootLayoutProps ) {
   return (
     <html lang="en">
       <body className={`${PlusJakartaSans.className} antialiased text-white`}>

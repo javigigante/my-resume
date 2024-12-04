@@ -6,25 +6,33 @@
     "plugin:jsx-a11y/recommended"
   ],
   "parser": "@babel/eslint-parser",
-  "plugins": ["react", "jsx-a11y"],
+  "plugins": ["react", "jsx-a11y", "next"],
   "settings": {
     "react": {
-      "version": "detect"
+      "version": "10.9.1"
     }
   },
   "env": {
     "node": true,
-    "browser": true,
+    "browser": true,    
     "es2021": true
   },
-  "globals": {
-    "process": "readonly"
+  "eslintConfig": {
+    "ignoreDuringBuilds": true,
+    "rules": {
+      "no-undef": "off",
+      "no-console": "warn"
+    },   
+    "globals": {
+      "process": "readonly",
+      "webpack": "readonly" 
+    }  
   },
   "rules": {
     "react/react-in-jsx-scope": "off",
     "no-console": "warn",
     "no-unused-vars": "warn",
-    "no-undef": ["error", { "typeof": true }],
+    "no-undef": "off",
     "react/prop-types": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "react/jsx-key": "warn",

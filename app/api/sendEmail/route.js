@@ -6,7 +6,7 @@ export async function POST(req) {
     const { name, email, phone, message } = await req.json();
     
     if ( !name || !email || !message ) {
-      return new Response( JSON.stringify({ message: 'All fields are required' }),
+      return new Response( JSON.stringify({ message: 'Rellena los campos Nombre, Email y Mensaje.' }),
       { 
         status: 400, 
       });
@@ -42,14 +42,14 @@ export async function POST(req) {
     await transporter.sendMail( mailFromAPIToSender );
     await transporter.sendMail( mailFromAPIToVIP );
 
-    return new Response( JSON.stringify({ message: 'Email sent successfully' }), 
+    return new Response( JSON.stringify({ message: 'Email mandado correctamente.' }), 
     {
       status: 200,
     });
   } catch (error) {
     console.error('Error sending email:', error);
     return new Response(
-      JSON.stringify({ message: 'Failed to send email', error: error.message }),
+      JSON.stringify({ message: 'Ha ocurrido un error al enviar el email.', error: error.message }),
       { 
         status: 500, 
       }
