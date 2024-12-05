@@ -91,7 +91,6 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más 
 ## v1.2.0 (2024-12-05)
 - Corrección de errores de tipo responsive en modo landscape móvil.
 - Se añade un enlace a la página principal en el nombre del header.
-- Implementación final en GitHub Pages.
 
 ## v1.1.0 (2024-12-01)
 - Versión final del proyecto.
