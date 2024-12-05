@@ -88,10 +88,15 @@ git push origin feature/nueva-caracteristica
 Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
 ## 🔧 **Changelog**
+## v1.2.0 (2024-12-01)
+- Corrección de errores de tipo responsive en modo landscape móvil.
+- Se añade un enlace a la página principal en el nombre del header.
+- Implementación final en GitHub Pages.
+
 ## v1.1.0 (2024-12-01)
 - Versión final del proyecto.
 - Comprobación adicional de email en el formulario de Contacto.
-- Implementación final en GitHub Pages.
+- Implementación final en Vercel.
 
 ## v1.0.0 (2024-11-18)
 - Versión inicial del proyecto con diseño base.

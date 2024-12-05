@@ -31,9 +31,12 @@ const Header = () => {
     >
       <div className="w-11/12 flex justify-center px-4 py-6 items-center z-40">
         <div className="flex-1">
-          <h4 className="lg:text-xl md:text-lg text-sm">
+          <a href="/">
+            <h4 className="lg:text-xl md:text-lg text-sm">
             Javier <span className="text-primarycolor">Díaz Gigante</span>
-          </h4>
+            </h4>
+          </a>
+          
         </div>
         <div className="flex-1">
           <div className="sm:block w-full hidden">
