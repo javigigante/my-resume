@@ -46,7 +46,7 @@ const ContactForm = () => {
 
   return (
     <div className="w-full max-w-md glass md:px-5 md:py-10 py-5 rounded-xl">
-      <form ref={ form } onSubmit={ sendEmail } className="w-full flex flex-col gap-5 items-center justify-center">
+      <form ref={ form } onSubmit={ sendEmail } className="w-full flex flex-col gap-5 px-2 items-center justify-center">
         <input
           required
           type="text"
